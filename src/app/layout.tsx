@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CookWhisper",
+  title: "CookWhisperer",
   description: "Experience the Future of Cooking with AI",
 };
 
