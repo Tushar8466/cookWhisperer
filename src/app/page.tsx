@@ -51,8 +51,8 @@ export default function Home() {
           </div>
 
           <h1 className="text-6xl font-extrabold tracking-tight sm:text-9xl lg:text-[7rem] leading-[0.9]">
-            The Secret Ingredient <br />
-            <span className="bg-linear-to-r from-blue-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent animate-gradient-x">to Your Perfect Dish</span>
+            Every Fridge Hides <br />
+            <span className="bg-linear-to-r from-blue-400 via-emerald-400 to-blue-400 bg-clip-text text-transparent animate-gradient-x">A Delicious Meal. <br /> We'll Find Yours.</span>
           </h1>
 
           <p className="max-w-4xl text-xl leading-relaxed text-zinc-300 sm:text-3xl">
