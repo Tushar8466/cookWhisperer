@@ -136,7 +136,13 @@ export default function GeneratePage() {
   };
 
   const generateRecipes = async () => {
-    if (ingredients.length === 0) return;
+    // Auto-add anything left in the input field when they click generate
+    let searchIngredients = [...ingredients];
+    if (inputValue.trim()) {
+      searchIngredients.push(inputValue.trim());
+      setIngredients(searchIngredients);
+      setInputValue("");
+    }
     
     setIsGenerating(true);
     setRecipes([]);
@@ -144,7 +150,7 @@ export default function GeneratePage() {
     // Simulate AI calculation
     await new Promise(resolve => setTimeout(resolve, 2500));
     
-    const dynamicResults = getDynamicRecipes(cuisine, diet, ingredients);
+    const dynamicResults = getDynamicRecipes(cuisine, diet, searchIngredients);
     
     setRecipes(dynamicResults);
     setIsGenerating(false);
